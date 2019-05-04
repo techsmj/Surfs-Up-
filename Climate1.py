@@ -103,12 +103,12 @@ def calc_temps(start_date):
 
     data1_list = []
     for x in start_results:
-        row = {}
-        row["Start Date"] = start_date
-        row["Average Temperature"] = float(x[0])
-        row["Highest Temperature"] = float(x[1])
-        row["Lowest Temperature"] = float(x[2])
-        data1_list.append(row)
+        table = {}
+        table["Start Date"] = start_date
+        table["Average Temperature"] = float(x[0])
+        table["Highest Temperature"] = float(x[1])
+        table["Lowest Temperature"] = float(x[2])
+        data1_list.append(table)
     return jsonify(data1_list)
 #print(calc_temps('2012-02-28', '2012-03-05'))
 
